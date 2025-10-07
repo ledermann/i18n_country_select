@@ -33,7 +33,7 @@ module I18nCountrySelect
       countries = countries + options_for_select(translations, selected)
 
       html_options = html_options.stringify_keys
-      add_default_name_and_id(html_options)
+      add_default_name_and_field(html_options)
 
       content_tag(:select, countries.html_safe, html_options)
     end
